@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Charles Churu</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            padding-top: 100px; /* Adjusted for fixed header */
+            padding-bottom: 100px; /* Adjusted for fixed footer */
+        }
+        header {
+            background: #354355;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem;
+            margin-bottom: 100px;
+        }
+        .filter-buttons {
+            position: fixed;
+            top: 100px; /* Adjusted to align below the fixed header */
+            left: 0;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            z-index: 1000;
+        }
+   
+
+        .filter-buttons button {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .filter-buttons button:hover {
+            background: #49556b;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .project {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1 1 calc(33.333% - 1rem);
+            min-width: 300px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 1rem;
+        }
+        .project-info h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #354355;
+        }
+        .project-info p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        .footer {
+    background: #354355;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px; /* Add margin-top for space above the footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('gee')">GEE Projects</button>
+        <button onclick="filterProjects('remote-sensing')">Remote Sensing Projects</button>
+        <button onclick="filterProjects('gis')">GIS Projects</button>
+        <button onclick="filterProjects('web')">Web Projects</button>
+    </div>
+    <div class="container">
+        <div class="projects">
+            <div class="project" data-category="remote-sensing">
+                <img src="assets/img/work1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Global Surface Water</h3>
+                    <p>Performed detailed analysis of global surface water dynamics using Google Earth Engine. Leveraged satellite imagery to map water bodies, track changes, and analyze trends in water availability and distribution over time.</p>
+                </div>
+            </div>
+            <div class="project" data-category="web">
+                <img src="assets/img/weather.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A responsive weather app developed with HTML, CSS, and JavaScript, featuring real-time weather updates, a 5-day forecast, search functionality, dynamic weather icons, and API integration for accurate data.</p>
+                </div>
+            </div>
+            <div class="project" data-category="web">
+                <img src="assets/img/port.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive HTML, CSS, and JavaScript webpage showcasing skills, projects, and interactive elements for enhanced user experience on all devices.</p>
+                </div>
+            </div>
+            <div class="project" data-category="gis">
+                <img src="assets/img/network.png" alt="Project 3">
+                <div class="project-info">
+                    <h3>Network Analysis</h3>
+                    <p>Optimized routes and assessed connectivity using ArcGIS Pro. Enhanced urban planning and infrastructure decisions through spatial relationship modeling and comprehensive network analysis tools.</p>
+                </div>
+            </div>
+            <div class="project" data-category="gis">
+                <img src="assets/img/hydrology.jpg" alt="Project 4">
+                <div class="project-info">
+                    <h3>Hydrological Analysis</h3>
+                    <p>Conducted hydrological analysis using ArcGIS Pro to model water flow, identify watersheds, and analyze flood risks. Utilized Digital Elevation Models (DEMs) for accurate terrain and water resource assessments.</p>
+                </div>
+            </div>
+            <div class="project" data-category="gee">
+                <img src="assets/img/lulc.png" alt="Project 5">
+                <div class="project-info">
+                    <h3>Land Use Landcover</h3>
+                    <p>Conducted comprehensive mapping of Land Use and Land Cover (LULC) using Google Earth Engine. Integrated satellite imagery and machine learning algorithms for accurate classification and spatial analysis, supporting environmental and urban planning studies.</p>
+                </div>
+            </div>
+            <div class="project" data-category="remote-sensing">
+                <img src="assets/img/flod.jpg" alt="Project 6">
+                <div class="project-info">
+                    <h3>Flood Mapping</h3>
+                    <p>A flood mapping project using Google Earth Engine (GEE) to analyze and visualize flood-affected areas. It leverages satellite imagery and advanced algorithms for accurate, real-time flood detection and monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&#169; 2024 Charles Churu. All rights reserved.</p>
+    </footer>
+    <script>
+        function filterProjects(category) {
+            let projects = document.querySelectorAll('.project');
+            projects.forEach(project => {
+                if (category === 'all' || project.getAttribute('data-category') === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

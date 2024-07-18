@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="website icon">
+    <title>About Me - Charles</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #355355;
+    font-size: 2rem;
+}
+
+section {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #007bff;
+}
+
+section h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact {
+    margin-top: 20px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.footer__social {
+    margin: 10px 0;
+}
+
+.footer__social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.footer__copy {
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="header">
+        <h1>About Me</h1>
+    </header>
+
+    <!-- Main Content -->
+    <section class="about section" id="about">
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/about.jpg" alt="About Image">
+            </div>
+            <div>
+                <h2 class="about__subtitle">I am Charles</h2>
+                <p class="about__text">I am a GIS and remote sensing specialist with a passion for technology and environmental conservation. I specialize in spatial data analysis and satellite image processing. In my free time, I enjoy exploring new places and working on innovative projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Content Sections -->
+    <div class="grid-container">
+        <section class="professional_journey">
+            <img src="assets/img/about1.png" alt="Professional Journey">
+            <h2>Professional Journey</h2>
+            <p>Hello! I'm Charles Churu, a passionate professional in the field of Geographic Information Systems (GIS) and Remote Sensing, with a solid academic background from Dedan Kimathi University of Technology. My journey in geospatial sciences has been marked by a profound interest in leveraging technology to understand our world better.</p>
+        </section>
+        <section class="expertise">
+            <img src="assets/img/about1.png" alt="Expertise and Interests">
+            <h2>Expertise and Interests</h2>
+            <p>I specialize in various domains, including environmental monitoring, urban planning, and natural resource management. My expertise spans multiple GIS software and tools, such as ArcGIS Pro, ERDAS IMAGINE, and QGIS. Additionally, I have a keen interest in programming and web development, with proficiency in languages like HTML, CSS, and JavaScript.</p>
+        </section>
+        <section class="mission">
+            <img src="assets/img/about1.png" alt="Mission and Values">
+            <h2>Mission and Values</h2>
+            <p>My mission is to contribute to sustainable development by providing innovative geospatial solutions. I am committed to using my skills to address real-world challenges and make a positive impact on society. Integrity, curiosity, and continuous learning are the core values that drive me in my professional and personal endeavors.</p>
+        </section>
+    </div>
+    
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch or learn more about my work, please feel free to reach out!</p>
+        <a href="mailto:charleschuru94@gmail.com">email</a>
+    </section>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Charles</p>
+        <div class="footer__social">
+            <a href="https://web.facebook.com/profile.php?id=61550491525441" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/charles_churu/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/C4708911Charles" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Charles All rights reserved</p>
+    </footer>
+</body>
+</html>
