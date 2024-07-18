@@ -578,7 +578,7 @@ img {
   .textarea_wrapper textarea {
   margin-top: 20px;
   display: block;
-  width: 500px;
+  width: 100%;
   background: white;
   border: 1px solid #DADADA;
   box-shadow: 0 0 1px 0 #E4E4E4;
