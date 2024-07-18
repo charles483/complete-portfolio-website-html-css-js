@@ -64,7 +64,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 - Charles Churu - [LinkedIn](https://www.linkedin.com/in/charles-wambui-853834260/)
-- Email: [wambui.churu22@students.dkut.ac.ke](mailto:charleschuru94@gmail.com)
+- Email: [charleschuru94@gmail.com](mailto:charleschuru94@gmail.com)
 - GitHub: [github.com/charles483](https://github.com/charles483)
 
 ---
