@@ -1,278 +1,172 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="website icon">
+    <title>About Me - Charles</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+}
 
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-        <link rel="website icon" href="assets/img/about1.png">
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Charles</a>
-                </div>
+header h1 {
+    color: #355355;
+    font-size: 2rem;
+}
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Latest projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+section {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-                
-            </nav>
-            
-        </header>
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Charles</span><br> a Gis Specialist</h1>
+section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #007bff;
+}
 
-                    <a href="https://drive.google.com/file/d/1O7CRMIq4TX0Ax_tQjcHpoLyIAUKieWuI/view?usp=drive_link" class="button" >Download my cv</a>
-                </div>
+section h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/charles-wambui-853834260/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://web.facebook.com/profile.php?id=61550491525441" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://github.com/charles483" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://x.com/C4708911Charles" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                    <!-- <a href=""class="home__social-icon"><i class='bx bxl-medium'></i></a> -->
-                    
-                </div>
+section p {
+    font-size: 1rem;
+    text-align: center;
+}
 
+.contact {
+    margin-top: 20px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-                <div class="home__img">
-                   
-                    <img class="circular--square" src="assets/img/profile.png" />
-                </div>
-            </section>
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+.contact a:hover {
+    text-decoration: underline;
+}
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about1.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Charles</h2>
-                        <p class="about__text"> a GIS student at Dedan Kimathi University of Technology
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
-                            Fascinated by how maps and data can unlock geographic insights, I'm diving deep into the world of GIS.  I'm eager to leverage my skills in ArcGis Pro , QGIS to solve real-world problems.
-                            
-                            Explore my portfolio to see my work!
-                        </p>  
-                        <a href="aboutme.html" id="more" class="button" >Read more</a>         
-                    </div>                                   
-                </div>
-            </section>
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-            
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">My academic journey at Dedan Kimathi University of Technology, coupled with a passion for geospatial analysis, has equipped me with a valuable skillset in:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name">JavaScript</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">35%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-data skills__icon'></i>
-                                <span class="skills__name">Spatial data analysis</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-map skills__icon'></i>
-                                <span class="skills__name">Spatial data visualization and cartography</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                    </div>
-                                
-                    <div>              
-                        <img src="assets/img/code.jpeg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-            
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+}
 
-            <!--===== WORK =====-->
-            
-            <section class="work section" id="work">
-                <h2 class="section-title">Latest Projects</h2>
-                <div class="projects-container">
-                    <div class="project" data-category="web">
-                        <img src="assets/img/weather.png" alt="Project 2">
-                        <div class="project-info">
-                            <h3>Weather App</h3>
-                            <p>A responsive weather app developed with HTML, CSS, and JavaScript, featuring real-time weather updates, a 5-day forecast, search functionality, dynamic weather icons, and API integration for accurate data.</p>
-                        </div>
-                    </div>
-                    <div class="project" data-category="gis">
-                        <img src="assets/img/hydrology.jpg" alt="Project 4">
-                        <div class="project-info">
-                            <h3>Hydrological Analysis</h3>
-                            <p>Conducted hydrological analysis using ArcGIS Pro to model water flow, identify watersheds, and analyze flood risks. Utilized Digital Elevation Models (DEMs) for accurate terrain and water resource assessments.</p>
-                        </div>
-                    </div>
-                    <div class="project" data-category="gis">
-                        <img src="assets/img/network.png" alt="Project 3">
-                        <div class="project-info">
-                            <h3>Network Analysis</h3>
-                            <p>Optimized routes and assessed connectivity using ArcGIS Pro. Enhanced urban planning and infrastructure decisions through spatial relationship modeling and comprehensive network analysis tools.</p>
-                        </div>
-                    </div>
-                    <!-- Add more projects as needed -->
-                </div>
-                <div class="button-container">
-                    <a href="projects.html" id="projects" class="button" target="_blank">View More</a> 
-                </div>
-            </section>
-            
- <!--===== CONTACT =====-->
- <h2 class="section-title">Contact Me</h2>
+.footer__social {
+    margin: 10px 0;
+}
 
-<section id="contact">
-  <!-- <div class="sectionheader"><h1>CONTACT</h1></div> -->
-  <article>
-    <p>Feel free to reach out to discuss any inquiries or collaborations.</p>
-    <label for="checkcontact" class="contactbutton"><div class="mail"></div></label>
-    <input id="checkcontact" type="checkbox">
-    <form action="" method="post" class="contactform">
-      <p class="input_wrapper">
-        <input type="text" name="contact_nom" id="contact_nom">
-        <label for="contact_nom">NAME</label>
-      </p>
-      <p class="input_wrapper">
-        <input type="text" name="contact_email" id="contact_email">
-        <label for="contact_email">EMAIL</label>
-      </p>
-      <p class="input_wrapper">
-        <input type="text" name="contact_sujet" id="contact_sujet">
-        <label for="contact_sujet">SUBJECT</label>
-      </p>
-      <p class="textarea_wrapper">
-        <textarea name="contact_message" id="contact_message"></textarea>
-      </p>
-      <p class="submit_wrapper">
-        <input type="submit" value="Send">
-      </p>
-    </form>
-  </article>
-</section>
+.footer__social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
 
+.footer__copy {
+    margin-top: 10px;
+}
 
-        </main>
+    </style>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="header">
+        <h1>About Me</h1>
+    </header>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Charles</p>
-            <div class="footer__social">
-                <a href="https://web.facebook.com/profile.php?id=61550491525441" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/charles_churu/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://x.com/C4708911Charles" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    <!-- Main Content -->
+    <section class="about section" id="about">
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/about.jpg" alt="About Image">
             </div>
-            <p class="footer__copy">&#169; Charles All rigths reserved</p>
-        </footer>
+            <div>
+                <h2 class="about__subtitle">I am Charles</h2>
+                <p class="about__text">I am a GIS and remote sensing specialist with a passion for technology and environmental conservation. I specialize in spatial data analysis and satellite image processing. In my free time, I enjoy exploring new places and working on innovative projects.</p>
+            </div>
+        </div>
+    </section>
 
-        <script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-808.js"></script>
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            const form = document.querySelector("#form")
-            const submitButton = document.querySelector("#submit")
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyIOSF65Um-zOtP5gdzxv9AzjDt4iCimpMiBNeyNFXa3b-BSzFjFOl2_zQIk8pv5vd6yw/exec'
-         
-            form.addEventListener('submit', e => {
-              submitButton.disabled = true
-              e.preventDefault()
-              let requestBody = new FormData(form)
-              fetch(scriptURL, { method: 'POST', body: requestBody})
-                .then(response => {
-                   alert('Success!', response)
-                   submitButton.disabled = false
-                  })
-                .catch(error => {
-                alert('Error!', error.message)
-                  submitButton.disabled = false
-         
-                }
-                )
-            })
-         </script>
-           <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-           
-         <script type="text/javascript" async src="//l.getsitecontrol.com/94g91e07.js"></script>
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-        <!-- chatbot -->
-        <script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-810.js"></script>
-    </body>
+    <!-- New Content Sections -->
+    <div class="grid-container">
+        <section class="professional_journey">
+            <img src="assets/img/about1.png" alt="Professional Journey">
+            <h2>Professional Journey</h2>
+            <p>Hello! I'm Charles Churu, a passionate professional in the field of Geographic Information Systems (GIS) and Remote Sensing, with a solid academic background from Dedan Kimathi University of Technology. My journey in geospatial sciences has been marked by a profound interest in leveraging technology to understand our world better.</p>
+        </section>
+        <section class="expertise">
+            <img src="assets/img/about1.png" alt="Expertise and Interests">
+            <h2>Expertise and Interests</h2>
+            <p>I specialize in various domains, including environmental monitoring, urban planning, and natural resource management. My expertise spans multiple GIS software and tools, such as ArcGIS Pro, ERDAS IMAGINE, and QGIS. Additionally, I have a keen interest in programming and web development, with proficiency in languages like HTML, CSS, and JavaScript.</p>
+        </section>
+        <section class="mission">
+            <img src="assets/img/about1.png" alt="Mission and Values">
+            <h2>Mission and Values</h2>
+            <p>My mission is to contribute to sustainable development by providing innovative geospatial solutions. I am committed to using my skills to address real-world challenges and make a positive impact on society. Integrity, curiosity, and continuous learning are the core values that drive me in my professional and personal endeavors.</p>
+        </section>
+    </div>
+    
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch or learn more about my work, please feel free to reach out!</p>
+        <a href="mailto:charleschuru94@gmail.com">email</a>
+    </section>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Charles</p>
+        <div class="footer__social">
+            <a href="https://web.facebook.com/profile.php?id=61550491525441" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/charles_churu/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/C4708911Charles" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Charles All rights reserved</p>
+    </footer>
+</body>
 </html>
