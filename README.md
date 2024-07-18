@@ -1,4 +1,4 @@
-Sure, here's a basic README file template for your portfolio website project:
+
 
 ---
 
@@ -69,4 +69,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Feel free to customize this template further based on specific details or additional functionalities of your portfolio website.
