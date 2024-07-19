@@ -12,16 +12,13 @@
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  --switch-bg:#f5f5f6;
-  --switch-circle-bg:#FFD701;
-  --icon-sun:#48393a;
-  --icon-moon: #353a3a;
+
   /*===== Fuente y tipografia ==   ===*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
   /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -30,58 +27,24 @@
   /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
-  /* --switch-circle-pos:35.66px; */
   /* =======================================================colors============================== */
   --bg-color: #1f242d;
-   --second-bg-color: #323946;
+  --second-bg-color: #323946;
   --background-color: ##fff;
-
-}
-:root[data-theme="dark"] {
-  --header-height: 3rem;
-  --font-semi: 600;
-  /*===== Colors =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 95%);
-  --switch-bg:#f5f5f6;
-  --switch-circle-bg:#FFD371;
-  --icon-sun:#997f44;
-  --icon-moon: #B1B0B5;
-  /*===== Fuente y tipografia ==   ===*/
-  --body-font: "Poppins", sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
-  --mb-2: 1rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-  /*===== z index =====*/
-  --z-back: -10;
-  --z-fixed: 100;
-  --switch-circle-pos:35.66px;
-  /* =======================================================colors============================== */
-  --bg-color: #1f242d;
-   --second-bg-color: #323946;
-   --background-color:var(--second-bg-color);
-
 }
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size: 0.875rem;
   }
 }
 
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -94,11 +57,12 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background-color: var(--background-color);
   max-height: 100vh;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -144,7 +108,6 @@ img {
   padding-bottom: 2rem;
 }
 
-
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -162,49 +125,7 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
-#themeswitcher{  
-  background-color: var(--switch-bg);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin: 2px;
-  cursor: pointer;
-  padding: 4px;
-  position: relative;
 
-}
-
-.themeswitcher::before{
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background-color: var(--switch-circle-bg);
-  border-radius: 50px;
-  z-index: 0;
-  left: 0;
-  transform: translateX(var(--switch-circle-pos));
-  transition: .5s ease;
-}
-#themeswitcher {
-  z-index: 1;
-  color: red;
-}
-#icon-sun{
-  fill: var(--icon-sun);
-  z-index: 1;
-}
-.icon{
-  z-index: 1;
-}
-.moon{
-  z-index:1;
-}
-#icon-moon{
-  fill: var(--icon-moon); 
-  z-index: 1;
-}
 /*===== NAV =====*/
 .nav {
   height: var(--header-height);
@@ -309,23 +230,22 @@ img {
 .circular--square {
   width: 480px;
   height: 300px;
-   border-radius: 50%;
-;
-   }
+  border-radius: 50%;
+}
 .home__blob {
   fill: var(--first-color);
 }
 .home__blob-img {
   width: 360px;
 }
-#more{
+#more {
   margin-top: 20px;
 }
-.projects{
+.projects {
   margin-top: 20px;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*BUTTONS*/
 .button {
@@ -362,7 +282,6 @@ img {
 .skills__container {
   row-gap: 2rem;
   text-align: center;
-  
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
@@ -436,7 +355,7 @@ img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 0 1 calc(33.333% - 1rem); /* Three columns per row */
   max-width: 400px;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .project:hover {
@@ -467,10 +386,8 @@ img {
 }
 
 .button-container {
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
-
-
 
 /* ===== CONTACT =====*/
 #contact {
@@ -508,7 +425,7 @@ img {
 }
 
 .contactbutton {
-  background: #F2385A;
+  background: #f2385a;
   box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
   text-align: center;
   display: block;
@@ -538,7 +455,7 @@ img {
 }
 
 .mail::before {
-  content: '';
+  content: "";
   top: -2.5em;
   left: -2.95em;
   display: block;
@@ -586,18 +503,18 @@ img {
   display: block;
   width: 100%;
   background: white;
-  border: 1px solid #DADADA;
-  box-shadow: 0 0 1px 0 #E4E4E4;
+  border: 1px solid #dadada;
+  box-shadow: 0 0 1px 0 #e4e4e4;
   box-sizing: border-box;
   padding: 1em;
   transition: all 250ms ease;
-  color: #5E5E5E;
+  color: #5e5e5e;
   text-indent: 15%;
 }
 
 .input_wrapper input[type="text"]:focus {
   background: rgba(242, 56, 90, 0.05);
-  box-shadow: inset 2px 2px 5px 0 #DADADA;
+  box-shadow: inset 2px 2px 5px 0 #dadada;
   outline: none;
   text-indent: 0;
 }
@@ -628,17 +545,17 @@ img {
   border-radius: 20px;
   min-height: 150px;
   background: white;
-  border: 1px solid #DADADA;
-  box-shadow: 0 0 1px 0 #E4E4E4;
+  border: 1px solid #dadada;
+  box-shadow: 0 0 1px 0 #e4e4e4;
   box-sizing: border-box;
   padding: 1em;
   transition: all 250ms ease;
-  color: #5E5E5E;
+  color: #5e5e5e;
 }
 
 .textarea_wrapper textarea:focus {
   background: rgba(242, 56, 90, 0.05);
-  box-shadow: inset 2px 2px 5px 0 #DADADA;
+  box-shadow: inset 2px 2px 5px 0 #dadada;
   outline: none;
 }
 
@@ -654,7 +571,7 @@ img {
   margin-top: 1em;
   margin-bottom: 6px;
   cursor: pointer;
-  background: #F2385A;
+  background: #f2385a;
   color: white;
   font-family: Oswald, sans-serif;
   font-size: 1em;
@@ -679,7 +596,6 @@ img {
     font-size: 0.8em;
   }
 }
-
 
 /* ===== FOOTER =====*/
 .footer {
