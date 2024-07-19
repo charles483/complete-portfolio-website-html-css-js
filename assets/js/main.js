@@ -1,17 +1,3 @@
-// building the switch funtion
-const switchTheme= () =>{
-    // get root element and get the datatheme vaalue
-   
-    const rootElem = document.documentElement;
-    let dataTheme = rootElem.getAttribute("data-theme"),
-    newTheme
-
-    newTheme = (rootElem.getAttribute('data-theme')==='light')? 'dark':'light'
-
-    rootElem.setAttribute('data-theme',newTheme)
-}
-// add event listener
-document.querySelector('#themeswitcher').addEventListener("click",switchTheme)
 
 /*===== MENU SHOW =====*/ 
 
